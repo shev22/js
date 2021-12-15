@@ -95,7 +95,7 @@ while (true) {
 document.write(number +' is less than 50' + "<br>");
 document.write('Total iterations is '+ iteration + "<br>");
 
- //Ex 8
+ //Exc 8
  document.write("<h3>Exercise 8</h3>");
 
  let total = parseInt("0");
