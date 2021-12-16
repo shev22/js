@@ -115,10 +115,3 @@ let average = total/count;
 document.write('average is '+ average); 
  
 //Ex 9
-document.write("<h3>Exercise 8</h3>");
-
-let numSeries = "4 98 4 6 1 32 4 65 4 3 5 7 89 7 10 1 36 8 57",
-    newNumSeries = numSeries.split(' ');
-    document.write(Math.min(...newNumSeries)+ "<br>") ;
-    document.write(Math.max(...newNumSeries)) 
-    
