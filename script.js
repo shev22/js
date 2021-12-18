@@ -101,7 +101,7 @@ document.write('Total iterations is '+ iteration + "<br>");
  let total = parseInt("0");
      count = 0;
 while(true){
- let number = prompt('Please enter a number'); 
+ let number = prompt('Ex 8', ''); 
 
   if(number == null || number <= 0){     
     break;
@@ -115,3 +115,42 @@ let average = total/count;
 document.write('average is '+ average); 
  
 //Ex 9
+
+let str = '10000 0 98 4 6 1 32';
+
+arr = Array.from(str.split(' '),Number);
+
+for (let i=0; i <= arr.length-1; i++) {
+  // find the idnex of the smallest element
+  let smallestIdx = i
+
+  for (let j=i; j <= arr.length-1; j++) {
+    if (arr[j] < arr[smallestIdx]) { 
+      smallestIdx = j
+    }
+  }
+
+  // if current iteration element isn't smallest swap it
+  if (arr[i] > arr[smallestIdx]) {
+    let temp = arr[i]
+    arr[i] = arr[smallestIdx]
+    arr[smallestIdx] = temp
+    console.log(arr)
+  }
+ 
+}
+console.log(arr[0], arr[arr.length-1])
+
+//Ex 9
+let numb = prompt('Ex 10', "");
+    sumNumb = 0,                    //have a storage ready
+    arr_numb = numb.split(""),      //split into individual characters
+    numbLenght = arr_numb.length;
+   
+for(i=0; i<=numbLenght-1; i++){         //iterate through
+  document.write((arr_numb [i] + " "));
+  sumNumb += parseInt(numb[i],10);      //convert from string to int
+};
+document.write(numbLenght);
+document.write(sumNumb);
+  
